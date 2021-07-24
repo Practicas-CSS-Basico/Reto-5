@@ -3,6 +3,8 @@ Colores
   dark-purple: hsl(300, 43%, 22%)
   pink:hsl(333, 80%, 67%)
   purple: hsl(303, 10%, 53%)
+  soft-white: hsl(300, 24%, 96%)
+  background-color: hsl(0, 0%, 90%);
 
 Fuente de la página
   https://fonts.google.com/specimen/Karla
@@ -14,5 +16,112 @@ Fuente de la página
 }
 
 body {
+  width: 1400px;
+  margin: 10em auto;
+  font-family: 'Karla', sans-serif;
   background-color: hsl(0, 0%, 90%);
+}
+
+.bg-image{
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-image--top{
+  top: 0;
+  left: 0;
+}
+
+.bg-image--bottom{
+  bottom: 0;
+  right: 0;
+}
+
+.header,
+.aside{
+  display: inline-block;
+  width: 450px;
+}
+
+.header{
+  margin-right: 400px;
+  margin-bottom: 5em;
+}
+
+.main-title{
+  font-size: 3rem;
+  color:hsl(300, 43%, 22%);
+}
+
+.main-subtitle{
+  color: hsl(303, 10%, 53%);
+}
+
+.rate{
+  position: relative;
+  margin-bottom: 1em;
+  padding: 0 2em;
+  border-radius: 10px;
+  line-height: 5;
+  background-color: hsl(300, 24%, 96%);
+}
+
+.rate__text{
+  margin-left: 1em;
+  color: hsl(303, 10%, 53%);
+}
+
+.rate__star{
+  vertical-align: middle;
+  margin-right: .5em;
+}
+
+.rate--first{
+  left: -75px;
+}
+
+.rate--second{
+  left: -50px;
+}
+
+.testimonial{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin-right: 50px;
+  padding: 2em 2.5em;
+  border-radius: 10px;
+  color: hsl(300, 24%, 96%);
+  background-color: hsl(300, 43%, 22%);
+}
+
+.testimonial--second{
+  top:50px;
+}
+
+.testimonial--third{
+  top:75px;
+}
+
+.user{
+  width: 250px;
+}
+
+.user__image{
+  border-radius: 50%;
+  max-width: 25%;
+}
+.user__image,
+.user__info{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.user__name,
+.user__category{
+  margin: .5em 1em;
+}
+
+.user__category{
+  color: hsl(333, 80%, 67%);
 }
